@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">learntktpl</string>
+    <string name="gretings_text">Selamat datang!</string>
+    <string name="input_1">Input Angka 1</string>
+    <string name="input_2">Input Angka 2</string>
+    <string name="submit">Submit</string>
+</resources>
