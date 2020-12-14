@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">learntktpl</string>
+    <string name="push_button">You have pushed the button this many times:</string>
+</resources>
