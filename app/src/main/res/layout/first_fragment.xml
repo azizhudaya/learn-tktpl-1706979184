@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.first.FirstFragment">
 
     <Chronometer
         android:id="@+id/stopwatchTime"
@@ -25,7 +26,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:linksClickable="false"
-        android:onClick="setStartStop"
         android:text="@string/main_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,6 @@
         android:id="@+id/resetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="resetTime"
         android:text="@string/reset_button"
         app:layout_constraintBottom_toBottomOf="@+id/mainButton"
         app:layout_constraintEnd_toStartOf="@+id/mainButton"
@@ -46,13 +45,23 @@
         app:layout_constraintTop_toTopOf="@+id/mainButton" />
 
     <Button
-        android:id="@+id/exitButton"
+        android:id="@+id/recordButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="exitApp"
-        android:text="@string/exit_button"
+        android:text="@string/record_button"
         app:layout_constraintBottom_toBottomOf="@+id/mainButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/mainButton"
         app:layout_constraintTop_toTopOf="@+id/mainButton" />
+
+    <Button
+        android:id="@+id/recordList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record_list"
+        app:layout_constraintBottom_toTopOf="@+id/mainButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopwatchTime" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
